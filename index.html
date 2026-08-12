@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck - Menu, Locations & More</title>
+    
+<!-- Force all relative URLs (like 'instagram.json', 'images/...') to resolve against the live site -->
+<!-- CSP Fix: Base tag commented out to prevent CSP violations -->
+    <!-- <base href="https://example.com/"> -->
+
+        <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+<style id="editor-staged-styles">
+</style>
+
+  <!-- Canonical & base SEO -->
+  <link rel="canonical" href="https://example.com/">
+  <meta name="description" content="Fresh food served from a local food truck. View the menu, hours, locations, and contact information.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Food Truck %4 Menu & Locations">
+  <meta property="og:description" content="See our menu, hours, locations, and latest updates.">
+  <meta property="og:image" content="OG.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Food Truck">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Food Truck %4 Menu & Locations">
+  <meta name="twitter:description" content="See our menu, hours, locations, and latest updates.">
+  <meta name="twitter:image" content="OG.png">
+
+  <!-- Performance: preconnect only -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- JSON-LD: Local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Food Truck",
+    "image": "OG.png",
+    "telephone": "+1-000-000-0000",
+    "priceRange": "$",
+    "servesCuisine": ["Sandwiches", "Breakfast"],
+    "address": [],
+    "areaServed": [],
+    "openingHoursSpecification": [],
+    "sameAs": []
+  }
+  </script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="branding-bar" style="display: flex; align-items: center;">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="images/Original.jpg" alt="Business Logo">
+                    </div>
+                </div>
+                <button class="nav-toggle" aria-label="Open Menu">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="images/truck.png" alt="Food Truck Logo">
+                </div>
+                <h1>Welcome to Our Food Truck.</h1>
+                <p>Gourmet Grilled Cheese & Breakfast Sandwiches on Wheels</p>
+                <a href="#menu" class="cta-button">
+                    <i class="fas fa-utensils"></i> View Our Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3>Gourmet Grilled Cheese</h3>
+                    <p>From classic comfort to creative combinations like our famous Firehouse sandwich with grape jelly, jalapeï¿½os, bacon, and Swiss cheese.</p>
+                </div>
+                <div class="feature-card hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-egg"></i>
+                    </div>
+                    <h3>Fresh Breakfast</h3>
+                    <p>Start your day right with our hearty breakfast sandwiches, bagels, and quesadillas made fresh to order every morning.</p>
+                </div>
+                <div class="feature-card hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Convenient Locations</h3>
+                    <p>Update this section with your business locations and service area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="menu" class="menu">
+        <div class="container">
+          <h2>Our Delicious Menu</h2>
+          <div class="menu-card-grid" id="menu-card-grid">
+            <!-- Dynamic menu cards go here -->
+          </div>
+          <div style="text-align: center; margin-top: 2rem;">
+             <p style="font-style: italic;">
+              <i class="fas fa-phone"></i> 
+                Call us at (000) 000-0000 for special orders or catering.    
+            </p>
+          </div>
+        </div>
+      </section>
+    
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">"Customer review placeholder."
+                    </div>
+                    <div class="reviewer">Customer Name</div>
+                    <div class="review-source">Review Source</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Customer review placeholder."
+                    </div>
+                    <div class="reviewer">Customer Name</div>
+                    <div class="review-source">Review Source</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="review-text">
+                        "Customer review placeholder."
+                    </div>
+                    <div class="reviewer">Customer Name</div>
+                    <div class="review-source">Review Source</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="location">
+        <div class="container">
+            <h2>Find Us Here</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3><i class="fas fa-coffee"></i> Location One</h3>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address Placeholder</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-clock"></i>
+                        <span>Hours Placeholder</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-phone"></i>
+                        <span>(000) 000-0000</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Location details placeholder.</span>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <h3><i class="fas fa-coffee"></i> Location Two</h3>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address Placeholder</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-clock"></i>
+                        <span>Hours Placeholder</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-phone"></i>
+                        <span>(000) 000-0000</span>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Location details placeholder.</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="map-container" style="margin-top: 2.5em;">
+                <h3>Interactive Maps</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
+                    <div>
+                        <iframe
+                            src="about:blank"
+                            width="400" height="300"
+                            style="border:0; border-radius: 12px; max-width: 90vw;"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="text-align: center; font-size:0.94em; margin-top:0.7em;">
+                            Address Placeholder
+                        </div>
+                    </div>
+                    <div>
+                        <iframe
+                            src="about:blank"
+                            width="400" height="300"
+                            style="border:0; border-radius: 12px; max-width: 90vw;"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div style="text-align: center; font-size:0.94em; margin-top:0.7em;">
+                            Address Placeholder
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<section id="social" class="social-media">
+    <div class="container">
+        <h2>Follow Our Journey</h2>
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook Placeholder">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram Placeholder">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok Placeholder">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Phone Placeholder">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
+        <div class="social-grid">
+            <div class="instagram-embed" style="padding:0; background:none; min-height:480px; box-shadow:none; display:block;">
+  <h3 style="text-align:center;margin-bottom:12px;">From Instagram</h3>
+  <div class="ig-grid">
+  <div class="ig-tile"><img src="images/550460917_1584782016299343_9206416656152248675_n..jpg" alt="Featured image" loading="lazy"></div>
+  <div class="ig-tile"><img src="images/550930225_1582038466573698_3516016037919935129_n..jpg" alt="Featured image" loading="lazy"></div>
+  <div class="ig-tile"><img src="images/552828346_1584782012966010_6275562193135603782_n..jpg" alt="Featured image" loading="lazy"></div>
+  <div class="ig-tile"><img src="images/554913873_1589257805851764_2218223569082163305_n..jpg" alt="Featured image" loading="lazy"></div>
+  <div class="ig-tile"><img src="images/555459390_1589257782518433_8725419355283302809_n..jpg" alt="Featured image" loading="lazy"></div>
+  <div class="ig-tile"><video src="images/video.mp4" playsinline muted loop autoplay></video></div>
+</div>
+  <div style="margin-top:12px; text-align:center;">
+    <a class="cta-button" href="#">
+      See more on Instagram
+    </a>
+  </div>
+</div>
+
+<!-- Desktop/tablet Facebook placeholder -->
+<div class="fb-desktop" style="width:500px;height:500px;max-width:90vw;display:flex;align-items:center;justify-content:center;border:2px dashed #ccc;border-radius:12px;">
+  Facebook Placeholder
+</div>
+
+<!-- Mobile Facebook placeholder -->
+<div class="fb-mobile" style="width:380px;height:500px;max-width:90vw;align-items:center;justify-content:center;border:2px dashed #ccc;border-radius:12px;">
+  Facebook Placeholder
+</div>
+    </div>
+</section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> (000) 000-0000</p>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Service Area Placeholder</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Location One</p>
+                    <p>Hours Placeholder</p>
+                    <p>Location Two</p>
+                    <p>Hours Placeholder</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook Placeholder</a></p>
+                    <p><a href="#">Instagram Placeholder</a></p>
+                    <p><a href="#">TikTok Placeholder</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Business Name. All rights reserved. | Established YEAR</p>
+                <p>Fresh Food & Local Favorites</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+<script>
+(function(){
+  var mount = document.getElementById('ig-feed');
+  if (!mount) return;
+
+  function isVideo(path){
+    return /\.(mp4|webm|ogg|ogv|mov|m4v)$/i.test(path || '');
+  }
+  function escapeAttr(s){
+    return String(s).replace(/"/g, '&quot;');
+  }
+
+  fetch('instagram.json', { cache: 'no-store' })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function(data){
+      var items = (data && (data.items || data.slots)) || [];
+      items = items.filter(Boolean).slice(0, 9);
+      if (!items.length){
+        mount.innerHTML = '<p style="text-align:center;opacity:.8;">No featured photos yet.</p>';
+        return;
+      }
+      var html = ['<div class="ig-grid">'];
+      for (var i=0;i<items.length;i++){
+        var item = items[i];
+        var src = (typeof item === 'string') ? item : item.src;
+        var href = (typeof item === 'object' && item.href) ? item.href : null;
+        var poster = (typeof item === 'object' && item.poster) ? item.poster : null;
+        if (!src) continue;
+        var content = isVideo(src)
+          ? '<video src="'+escapeAttr(src)+'" ' + (poster ? 'poster="'+escapeAttr(poster)+'" ' : '') + 'playsinline muted loop autoplay></video>'
+          : '<img src="'+escapeAttr(src)+'" alt="Featured image" loading="lazy">';
+        var tile = href
+          ? '<a class="ig-tile" href="'+escapeAttr(href)+'" target="_blank" rel="noopener">'+content+'</a>'
+          : '<div class="ig-tile">'+content+'</div>';
+        html.push(tile);
+      }
+      html.push('</div>');
+      mount.innerHTML = html.join('');
+    })
+    .catch(function(err){
+      console.warn('instagram.json load failed:', err);
+      mount.innerHTML = '<p style="text-align:center;opacity:.8;">Unable to load featured photos.</p>';
+    });
+})();
+</script>
+
+</body>
+</html>
