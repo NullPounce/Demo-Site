@@ -207,7 +207,7 @@ function renderMenuCards(menuData) {
     });
   
   // ========== END DYNAMIC MENU RENDERING ==========
-  fetch('https://worker-d1-public.thecheesewagon.workers.dev/')
+  fetch('https://worker-d1-public.YOUR-NAME-PLACEHOLDER.workers.dev/')
   .then(res => res.json())
   .then(menu => {
     renderMenuCards(menu);
